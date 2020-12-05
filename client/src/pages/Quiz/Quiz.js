@@ -5,9 +5,9 @@ export default function App() {
         {
             questionText: "What is the capital of Canada?",
             answerOptions: [
-                { answerText: 'Vancouver', isCorrect: false },
-                { answerText: 'Toronto', isCorrect: false },
-                { answerText: 'Ottowa', isCorrect: true },
+                {answerText: 'Vancouver', isCorrect: false},
+                {answerText: 'Toronto', isCorrect: false},
+                {answerText: 'Ottowa', isCorrect: true},
                 { answerText: 'Quebec', isCorrect: false},
             ],
         },
@@ -95,8 +95,8 @@ export default function App() {
         {
             questionText: "What country has the most lakes?",
             answerOptions: [
-                { answerText: 'Sweden', isCorrect: false },
-                { answerText: 'Norway', isCorrect: false },
+                {answerText: 'Sweden', isCorrect: false},
+                {answerText: 'Norway', isCorrect: false },
                 { answerText: 'Canada', isCorrect: true },
                 { answerText: 'U.S.A.', isCorrect: false },
             ]
