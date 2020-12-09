@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
-import logo from './logo.svg'
+// import logo from './logo.svg'
 import './Home.css'
 
 function Home() {
+
+
+  
   return (
     <div>
       {/* <img src={logo} /> */}
@@ -12,6 +15,9 @@ function Home() {
         You are now inside a protected route, you can only access this if you
         are logged in.
       </h2>
+
+      <button><a src="/Quiz">Quiz Page</a>
+      </button>
     </div>
   )
 }
