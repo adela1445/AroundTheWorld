@@ -4,7 +4,7 @@ const passport = require('passport')
 const LocalStrategy = require('passport-local')
 
 passport.serializeUser((user, done) => {
-  done(null, user.id)
+  done(null, user)
 })
 
 passport.deserializeUser((id, done) => {
@@ -16,6 +16,7 @@ passport.deserializeUser((id, done) => {
 // Local Strategy
 passport.use(
   new LocalStrategy({ usernameField: 'email' }, (email, password, done) => {
+
     // Match User
     User.findOne({ email: email })
       .then((user) => {
@@ -30,6 +31,9 @@ passport.use(
               newUser
                 .save()
                 .then((user) => {
+                  console.log("jsdhkjshdkjshdkjshdjk")
+                  console.log(user)
+
                   return done(null, user)
                 })
                 .catch((err) => {

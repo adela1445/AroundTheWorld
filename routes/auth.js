@@ -5,10 +5,12 @@ const User = require('../models/User.js')
 const router = express.Router()
 
 router.post('/register_login', (req, res, next) => {
+  console.log(req)
   passport.authenticate('local', function (err, user, info) {
     if (err) {
       return res.status(400).json({ errors: err })
     }
+    console.log(user)
     if (!user) {
       return res.status(400).json({ errors: 'No user found' })
     }
