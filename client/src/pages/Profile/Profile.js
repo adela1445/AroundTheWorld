@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useRef } from 'react'
 import './Profile.css'
 // link rel="stylesheet" type="text/css" href="Profile.css"
@@ -19,8 +20,30 @@ function Profile() {
       <br></br>
       <br></br>
     <button type="button" id="homeButton" onclick="Home.js">Return to Home</button>
+=======
+import React, { useEffect } from 'react'
+import './Profile.css'
+
+function Profile() {
+
+
+  
+  return (
+    <div>
+      {/* <img src={logo} /> */}
+      <h1>Hello</h1>
+      <h2>
+        {' '}
+        This is the Profile section
+      </h2>
+
+>>>>>>> 5899998970e3f8aa0f2eb8aea2d0027b9196aee7
     </div>
   )
 }
 
+<<<<<<< HEAD
 export default Profile
+=======
+export default Profile
+>>>>>>> 5899998970e3f8aa0f2eb8aea2d0027b9196aee7
