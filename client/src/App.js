@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link, NavLink } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import PrivateRoute from './components/ProtectedHOC/ProtectedRoute'
 import Login from './pages/Login/Login'
@@ -13,22 +13,46 @@ function App() {
     <Router>
       <div>
 
+
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <ul>
-            <li>
-              <Link to="/">Login</Link>
-            </li>
-            <li>
-              <Link to="/Home">Home</Link>
-            </li>
-            <li>
-              <Link to="/Quiz">Quiz</Link>
-            </li>
-            <li>
-              <Link to="/Profile">Profile</Link>
-            </li>
-          </ul>
-        </nav>
+          <NavLink to=""
+            exact={true}
+            activeClassName="text-gray-700 bg-gray-100"
+            inactiveClassName="text-gray-500 hover:text-gray-700"
+            className="ml-4 px-2 py-1 font-medium text-xs leading-5 rounded-md"
+          >
+            AroundTheWorld
+             
+          </NavLink>
+          <NavLink to="Home"
+            exact={true}
+            activeClassName="text-gray-700 bg-gray-100"
+            inactiveClassName="text-gray-500 hover:text-gray-700"
+            className="ml-4 px-2 py-1 font-medium text-xs leading-5 rounded-md"
+          >
+            Home
+             
+          </NavLink>
+          <NavLink to="Quiz"
+            exact={true}
+            activeClassName="text-gray-700 bg-gray-100"
+            inactiveClassName="text-gray-500 hover:text-gray-700"
+            className="ml-4 px-2 py-1 font-medium text-xs leading-5 rounded-md"
+          >
+            Quiz
+             
+          </NavLink>
+          <NavLink to="Profile"
+            exact={true}
+            activeClassName="text-gray-700 bg-gray-100"
+            inactiveClassName="text-gray-500 hover:text-gray-700"
+            className="ml-4 px-2 py-1 font-medium text-xs leading-5 rounded-md"
+          >
+            Profile
+             
+          </NavLink>
+          </nav>
+       
       </div>
       <UserProvider>
         <div>
@@ -36,12 +60,12 @@ function App() {
             <PrivateRoute path='/home'>
               <Home />
             </PrivateRoute>
-            <Route path="/quiz">
+            <PrivateRoute path="/quiz">
               <Quiz />
-            </Route>
-            <Route path="/profile">
+            </PrivateRoute>
+            <PrivateRoute path="/profile">
               <Profile />
-            </Route>
+            </PrivateRoute>
 
             <Route exact path='/' component={(props) => <Login {...props} />} />
             <Route>
