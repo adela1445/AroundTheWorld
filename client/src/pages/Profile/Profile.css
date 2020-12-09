@@ -1,21 +1,21 @@
 body {
-background-image: url(quizshowwallpaper.jpg);
-background-color: azure;
-height: auto;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+  /* background-image: url(quizshowwallpaper.jpg); */
+  background-color: azure;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bodyText {
-text-align: left;
-font-size: 14px;
+  text-align: left;
+  font-size: 14px;
 }
 
 .importScore {
-color: chartreuse;
-text-align: right;
-font-size: 18px;
+  color: chartreuse;
+  text-align: right;
+  font-size: 18px;
 }
 
 #homeButton {
