@@ -6,15 +6,22 @@
   "proxy": "http://localhost:8000/",
   "secure": false,
   "dependencies": {
+    "@craco/craco": "^5.6.4",
+    "@tailwindcss/ui": "^0.3.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-router": "^6.0.0-alpha.5",
+    "react-router-dom": "^6.0.0-alpha.5",
+    "react-scripts": "3.4.1",
+    "tailwindcss": "^1.4.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "browserslist": {
