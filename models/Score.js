@@ -6,6 +6,9 @@ const ScoreSchema = new mongoose.Schema(
     score: {
       type: Number,
       default: 0,
+        },
+    timescore: {
+        type: Number,  
     },
     user_id: {
       type: String,
