@@ -31,7 +31,6 @@ passport.use(
               newUser
                 .save()
                 .then((user) => {
-                  console.log("jsdhkjshdkjshdkjshdjk")
                   console.log(user)
 
                   return done(null, user)
