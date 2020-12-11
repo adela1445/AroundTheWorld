@@ -6,16 +6,20 @@
   "proxy": "http://localhost:8000/",
   "secure": false,
   "dependencies": {
+    "@craco/craco": "^5.8.0",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "4.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
   },
   "browserslist": {
     "production": [
