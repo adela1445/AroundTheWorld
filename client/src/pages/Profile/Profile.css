@@ -7,8 +7,15 @@
   background-size: cover;
 } */
 
+#bodyStyle {
+  background-image: url("profileWallpaper.jpeg");
+  height: 100%;
+  width: 100%;
+}
+
 .dataText {
   padding-left: 16px;
+  color: white;
 }
 
 .importScore {

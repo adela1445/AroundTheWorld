@@ -7,7 +7,15 @@ import Quiz from './pages/Quiz/Quiz'
 import Profile from './pages/Profile/Profile'
 
 import { UserProvider } from './context/userContext'
+import scoreContext from './context/scoreContext'
 // import { route } from '../../routes/api'
+
+let user = {
+  isLoggedIn:false,
+  score: 0,
+  timer: 0,
+}
+
 function App() {
   return (
     <Router>
@@ -55,6 +63,7 @@ function App() {
        
       </div>
       <UserProvider>
+        <scoreContext.Provider value={user}>
         <div>
           <Switch>
             <PrivateRoute path='/home'>
@@ -73,6 +82,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+       </scoreContext.Provider>
       </UserProvider>
     </Router>
   )
