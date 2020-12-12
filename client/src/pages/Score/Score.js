@@ -1,5 +1,5 @@
 import React, { useRef, useContext } from 'react'
-import './Profile.css'
+import './Score.css'
 import scoreContext from '../../context/scoreContext'
 
 // class ScoreCard extends React.Component {
@@ -24,7 +24,7 @@ function ScoreCard() {
   )
 }
 
-function Profile() {
+function Score() {
 
   return (
     <div id="bodyStyle">
@@ -54,6 +54,6 @@ function Profile() {
   )
 }
 
-export default Profile
+export default Score
 
 

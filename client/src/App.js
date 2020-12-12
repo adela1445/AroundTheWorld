@@ -4,7 +4,7 @@ import Home from './pages/Home/Home'
 import PrivateRoute from './components/ProtectedHOC/ProtectedRoute'
 import Login from './pages/Login/Login'
 import Quiz from './pages/Quiz/Quiz'
-import Profile from './pages/Profile/Profile'
+import Score from './pages/Score/Score'
 
 import { UserProvider } from './context/userContext'
 import scoreContext from './context/scoreContext'
@@ -50,13 +50,13 @@ function App() {
             Quiz
              
           </NavLink>
-          <NavLink to="Profile"
+          <NavLink to="Highscores"
             exact={true}
             activeClassName="text-gray-700 bg-gray-100"
             inactiveClassName="text-gray-500 hover:text-gray-700"
             className="ml-4 px-2 py-1 font-medium text-xs leading-5 rounded-md"
           >
-            Profile
+            My Highscores
              
           </NavLink>
           </nav>
@@ -72,8 +72,8 @@ function App() {
             <PrivateRoute path="/quiz">
               <Quiz />
             </PrivateRoute>
-            <PrivateRoute path="/profile">
-              <Profile />
+            <PrivateRoute path="/Highscores">
+              <Score />
             </PrivateRoute>
 
             <Route exact path='/' component={(props) => <Login {...props} />} />
