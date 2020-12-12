@@ -1,16 +1,36 @@
-import React, { useRef } from 'react'
+import React, { useRef, useContext } from 'react'
 import './Profile.css'
-import Background from './profileWallpaper.jpeg';
+import scoreContext from '../../context/scoreContext'
 
-// link rel="stylesheet" type="text/css" href="Profile.css"
+// class ScoreCard extends React.Component {
+//   let userContext = useContext(userContext)
+//   // Assign a contextType to read the current theme context.
+//   // React will find the closest theme Provider above and use its value.
+//   // In this example, the current theme is "dark".
+//   static contextType = userContext;
+//   render() {
+//     <p>{this.context}</p>
+//   }
+// }
+
+function ScoreCard() {
+  const score = useContext(scoreContext)
+  console.log(score)
+  return (
+        <div>
+        score is:
+        {score.score}
+      </div>
+  )
+}
 
 function Profile() {
+
   return (
-    <div>
-      <img src={Background}></img>
-      {/* <h1 className="bodyText">Welcome to your quiz profile!</h1> */}
+    <div id="bodyStyle">
+      <br></br>
       <center>
-      <h2>
+      <h2 className ="dataText">
         {' '}
         View your recent quiz performance on this page!
       </h2>
@@ -18,12 +38,12 @@ function Profile() {
       <br></br>
       <br></br>
       <h4 className ="dataText">Last quiz # of correct answers: </h4>
-  {/* <h4 className="importScore">{}</h4> */}
+      <ScoreCard/>
       <br></br>
       <br></br>
       <br></br>
       <h4 className ="dataText">Last quiz # of seconds remaining: </h4>
-  {/* <h4 className="importScore">{}</h4> */}
+      <p></p>
       <br></br>
       <br></br>
       <br></br>
@@ -35,3 +55,5 @@ function Profile() {
 }
 
 export default Profile
+
+
