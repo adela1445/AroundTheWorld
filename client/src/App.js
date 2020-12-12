@@ -17,7 +17,7 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <NavLink to=""
             exact={true}
-            activeClassName="text-gray-700 bg-gray-100"
+            activeClassName="text-gold-700 bg-gray-100"
             inactiveClassName="text-gray-500 hover:text-gray-700"
             className="ml-4 px-2 py-1 font-medium text-xs leading-5 rounded-md"
           >

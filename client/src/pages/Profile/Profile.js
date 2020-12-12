@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import './Profile.css'
 import Background from './profileWallpaper.jpeg';
-
+// import Button from '../Button/Button.js'
 // link rel="stylesheet" type="text/css" href="Profile.css"
 
 function Profile() {
@@ -9,12 +9,10 @@ function Profile() {
     <div>
       <img src={Background}></img>
       {/* <h1 className="bodyText">Welcome to your quiz profile!</h1> */}
-      <center>
       <h2>
         {' '}
         View your recent quiz performance on this page!
       </h2>
-      </center>
       <br></br>
       <br></br>
       <h4 className ="dataText">Last quiz # of correct answers: </h4>
@@ -27,9 +25,7 @@ function Profile() {
       <br></br>
       <br></br>
       <br></br>
-    <center>
-    <Button />
-    </center>
+      {/* <Button /> */}
     </div>
   )
 }
