@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-node_modules/**/*
+
 .expo/*
 npm-debug.*
 package-lock.json
@@ -8,9 +7,7 @@ yarn.lock
 *.p12
 *.key
 *.mobileprovision
-=======
 node_modules
 .env
 DS_Store
 client/build
->>>>>>> dd91c5bc47050f1897d8dd027e40872bbb11474f
