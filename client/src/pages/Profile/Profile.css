@@ -1,0 +1,37 @@
+/* body {
+  background-image: url(profileWallpaper.jpeg);
+  background-color: azure;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+#bodyStyle {
+  background-image: url("profileWallpaper.jpeg");
+  height: 100%;
+  width: 100%;
+}
+
+.dataText {
+  padding-left: 16px;
+  color: white;
+}
+
+.importScore {
+  color: chartreuse;
+  text-align: right;
+  font-size: 18px;
+}
+
+#homeButton {
+  border: none;
+  color: goldenrod;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

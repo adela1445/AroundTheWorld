@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [Argon PRO React Native](https://creativetimofficial.github.io/argon-pro-react-native/docs/#) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=Start%20Your%20Development%20With%20A%20Badass%20React%20Native%20app%20inspired%20by%20Argon%20Design%20System.%0Ahttps%3A//demos.creative-tim.com/argon-pro-react-native/)
 
 
@@ -218,3 +219,17 @@ Google+: <https://plus.google.com/+CreativetimPage>
 
 Instagram: <https://www.instagram.com/CreativeTimOfficial>
 
+=======
+# MERN Boilerplate
+
+This is a simple boilerplate using React, Express, Node, Mongoose
+Please make a copy of the `.env.sample` file rename to `.env` and update the information with your mongo url and the port you wish to use if you need a different port.
+
+## Errors you might see
+
+You might encounter an issue where it does not recognize the module, specially those inside of routes, please make sure the extension of your files is `.mjs` (module) and not just `.js` this should solve the problem.
+
+# How to Run this app
+
+simple `npm install` then you can either make a build by going into the client and running `npm run build` or you can just run `npm run start:dev` to begin, this should render the simple app with a button, that hits the server.
+>>>>>>> dd91c5bc47050f1897d8dd027e40872bbb11474f
