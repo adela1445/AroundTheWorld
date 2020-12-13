@@ -5,7 +5,7 @@ import PrivateRoute from './components/ProtectedHOC/ProtectedRoute'
 import Login from './pages/Login/Login'
 import Quiz from './pages/Quiz/Quiz'
 import Score from './pages/Score/Score'
-
+import './index.css'
 import { UserProvider } from './context/userContext'
 import scoreContext from './context/scoreContext'
 // import { route } from '../../routes/api'
@@ -19,14 +19,14 @@ let user = {
 function App() {
   return (
     <Router>
-      <div>
+      <div className ="navBG">
 
 
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <NavLink to=""
             exact={true}
-            activeClassName="text-gray-700 bg-gray-100"
-            inactiveClassName="text-gray-500 hover:text-gray-700"
+            activeClassName="text-red-700 bg-red-100 "
+            inactiveClassName="text-red-500 hover:text-red-700"
             className="ml-4 px-2 py-1 font-medium text-xs leading-5 rounded-md"
           >
             AroundTheWorld
@@ -34,8 +34,8 @@ function App() {
           </NavLink>
           <NavLink to="Home"
             exact={true}
-            activeClassName="text-gray-700 bg-gray-100"
-            inactiveClassName="text-gray-500 hover:text-gray-700"
+            activeClassName="text-red-700 bg-red-100"
+            inactiveClassName="text-red-500 hover:text-red-700"
             className="ml-4 px-2 py-1 font-medium text-xs leading-5 rounded-md"
           >
             Home
@@ -43,8 +43,8 @@ function App() {
           </NavLink>
           <NavLink to="Quiz"
             exact={true}
-            activeClassName="text-gray-700 bg-gray-100"
-            inactiveClassName="text-gray-500 hover:text-gray-700"
+            activeClassName="text-red-700 bg-red-100"
+            inactiveClassName="text-red-500 hover:text-red-700"
             className="ml-4 px-2 py-1 font-medium text-xs leading-5 rounded-md"
           >
             Quiz
@@ -52,14 +52,14 @@ function App() {
           </NavLink>
           <NavLink to="Highscores"
             exact={true}
-            activeClassName="text-gray-700 bg-gray-100"
-            inactiveClassName="text-gray-500 hover:text-gray-700"
+            activeClassName="text-red-700 bg-red-100"
+            inactiveClassName="text-red-500 hover:text-red-700"
             className="ml-4 px-2 py-1 font-medium text-xs leading-5 rounded-md"
           >
             My Highscores
              
           </NavLink>
-          </nav>
+        </nav>
        
       </div>
       <UserProvider>

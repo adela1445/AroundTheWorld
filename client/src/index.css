@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbar {
+  color: coral;
+  font-family: revert;
+}
+.bg-light {
+  background-color: darkslategray;
+}
+.textColor {
+  color: deeppink;
+}
