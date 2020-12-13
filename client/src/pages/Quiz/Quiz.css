@@ -1,8 +1,14 @@
-body {
-  /* background-image: url(quizshowwallpaper.jpg); */
-  background-color: azure;
+/* body {
+  background-image: url(quizshowwallpaper.jpg); 
+  background-color: azure; 
   height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}  */
+
+#quizBody {
+  background-image: url("quizBG.jpg");
+  height: 100%;
+  width: 100%;
 }

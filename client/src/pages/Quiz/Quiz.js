@@ -127,14 +127,23 @@ const questions = [
 
 function Quiz() {
     return (
-      <div>
-        {/* <img src={logo} /> */}
+      <div id="quizBody">
+      <br></br>
+      <br></br><br></br>
+      <br></br>
         <h1>Hello</h1>
         <h2>
           {' '}
           This is the quiz section
         </h2>
-  
+        <br></br>
+      <br></br><br></br>
+      <br></br><br></br>
+      <br></br>  <br></br><br></br>
+      <br></br><br></br>
+      <br></br>  <br></br><br></br>
+      <br></br><br></br>
+      <br></br>
       </div>
     )
 }

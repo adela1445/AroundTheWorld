@@ -7,9 +7,6 @@
   color: coral;
   font-family: revert;
 }
-.bg-light {
-  background-color: darkslategray;
-}
-.textColor {
-  color: deeppink;
+.navBG {
+  background-color: rgb(18, 75, 75);
 }
