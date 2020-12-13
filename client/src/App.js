@@ -19,10 +19,10 @@ let user = {
 function App() {
   return (
     <Router>
-      <div className ="navBG">
+      <div>
 
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light navBG">
           <NavLink to=""
             exact={true}
             activeClassName="text-red-700 bg-red-100 "
