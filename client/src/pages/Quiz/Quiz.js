@@ -9,7 +9,8 @@ const questions = [
         questionText: "What is the capital of Canada?",
         answerOptions: [
             {answerText: 'Vancouver', isCorrect: false},
-            {answerText: 'Toronto', isCorrect: false},
+    
+            { answerText: 'Toronto', isCorrect: false },
             {answerText: 'Ottowa', isCorrect: true},
             { answerText: 'Quebec', isCorrect: false},
         ],
@@ -127,23 +128,36 @@ const questions = [
 
 function Quiz() {
     return (
-      <div id="quizBody">
-      <br></br>
-      <br></br><br></br>
-      <br></br>
-        <h1>Hello</h1>
-        <h2>
-          {' '}
-          This is the quiz section
-        </h2>
-        <br></br>
-      <br></br><br></br>
-      <br></br><br></br>
-      <br></br>  <br></br><br></br>
-      <br></br><br></br>
-      <br></br>  <br></br><br></br>
-      <br></br><br></br>
-      <br></br>
+        <div id="quizBody">
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <center>
+                <form className="formBG">
+                    <label>Question #
+                        <br></br>
+                        <input placeholder="questionArray" />
+                    </label>
+                    <br></br>
+                    <br></br>
+                    <button id="buttonYesNo">Yes</button>
+                    <button id="buttonYesNo">No</button>
+                </form>
+            </center>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
       </div>
     )
 }

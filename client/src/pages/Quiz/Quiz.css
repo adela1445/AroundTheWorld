@@ -12,3 +12,22 @@
   height: 100%;
   width: 100%;
 }
+.formBG {
+  background-image: url("formBG.jpg");
+  height: 100%;
+  width: 60%;
+  align-content: center;
+}
+#buttonYesNo {
+  border: solid goldenrod;
+  border-radius: 8mm;
+  background-color: palegoldenrod;
+  color: goldenrod;
+  padding: 5px 15px;
+  text-align: center;
+  font-weight: 900;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

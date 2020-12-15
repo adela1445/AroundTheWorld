@@ -15,7 +15,6 @@ function Home() {
         You are now inside a protected route, you can only access this if you
         are logged in.
       </h2>
-
       <button><a src="/Quiz">Quiz Page</a>
       </button>
     </div>
