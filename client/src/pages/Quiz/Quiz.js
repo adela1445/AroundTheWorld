@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 // import React, { useEffect } from 'react'
 import './Quiz.css'
+import scoreContext from '../../context/scoreContext'
 
 
 
@@ -127,6 +128,18 @@ const questions = [
 
 
 function Quiz() {
+    const i = 0
+    const [counter, setCounter] = useContext(scoreContext)
+
+    function incPnt(event) {
+        event.preventDefault();
+        // document.getElementById("scoreCount").value=++1
+        setCounter(counter + 1)
+        console.log(counter)
+      };
+    const [count, setCount] = useState(0);
+        
+    
     return (
         <div id="quizBody">
             <br></br>
@@ -137,14 +150,15 @@ function Quiz() {
             <br></br>
             <center>
                 <form className="formBG">
-                    <label>Question #
+                    <label>Question #1 
                         <br></br>
-                        <input placeholder="questionArray" />
+                    Do you want to eat pizza around the world?
                     </label>
                     <br></br>
                     <br></br>
-                    <button id="buttonYesNo">Yes</button>
-                    <button id="buttonYesNo">No</button>
+                    <button className="buttonYesNo" onClick={incPnt} >Yes</button>
+                    
+                    <button className="buttonYesNo" onClick={()=>{}}>No</button>
                 </form>
             </center>
             <br></br>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch, Link, NavLink } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import PrivateRoute from './components/ProtectedHOC/ProtectedRoute'
@@ -17,6 +17,8 @@ let user = {
 }
 
 function App() {
+
+  const [counter, setCounter] = useState(0)
   return (
     <Router>
       <div>
@@ -63,7 +65,7 @@ function App() {
        
       </div>
       <UserProvider>
-        <scoreContext.Provider value={user}>
+        <scoreContext.Provider value={[counter,setCounter]}>
         <div>
           <Switch>
             <PrivateRoute path='/home'>
