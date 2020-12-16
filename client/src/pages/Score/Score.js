@@ -14,12 +14,12 @@ import scoreContext from '../../context/scoreContext'
 // }
 
 function ScoreCard() {
-  const score = useContext(scoreContext)
+  const [score,setCounter] = useContext(scoreContext)
   console.log(score)
   return (
-        <div className="dataText">
+        <div id="scoreCount"className="dataText">
         score is: 
-        {score.score}
+        {score}
       </div>
   )
 }
