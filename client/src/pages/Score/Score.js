@@ -17,8 +17,8 @@ function ScoreCard() {
   const score = useContext(scoreContext)
   console.log(score)
   return (
-        <div>
-        score is:
+        <div className="dataText">
+        score is: 
         {score.score}
       </div>
   )
@@ -29,26 +29,36 @@ function Score() {
   return (
     <div id="bodyStyle">
       <br></br>
+      <br></br>
+
       <center>
-      <h2 className ="dataText">
-        {' '}
+        
+        <form className="formStyle">
+        <br></br>
+
+          <h2 className="dataText">
         View your recent quiz performance on this page!
-      </h2>
+          </h2>
+         
+          <br></br>
+          <br></br>
+          <h4 className="dataText1">Last quiz # of correct answers: </h4>
+          <br></br>
+          <ScoreCard />
+          <br></br>
+
+        </form>
       </center>
       <br></br>
       <br></br>
-      <h4 className ="dataText">Last quiz # of correct answers: </h4>
-      <ScoreCard/>
       <br></br>
-      <br></br>
-      <br></br>
-      <h4 className ="dataText">Last quiz # of seconds remaining: </h4>
+     
       <p></p>
       <br></br>
       <br></br>
       <br></br>
     <center>
-    <button type="button" id="homeButton" onclick="Home.js">Return to Home</button>
+    
     </center>
     </div>
   )
