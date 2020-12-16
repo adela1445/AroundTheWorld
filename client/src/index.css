@@ -4,9 +4,9 @@
 @tailwind utilities;
 
 .navbar {
-  color: coral;
+  color: rgb(219, 201, 97);
   font-family: revert;
 }
 .navBG {
-  background-color: rgb(18, 75, 75);
+  background-color: rgb(18, 28, 75);
 }

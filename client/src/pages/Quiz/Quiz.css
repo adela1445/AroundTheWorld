@@ -9,6 +9,8 @@
 
 #quizBody {
   background-image: url("quizBG.jpg");
+  background-position: center;
+
   height: 100%;
   width: 100%;
 }
@@ -18,7 +20,7 @@
   width: 60%;
   align-content: center;
 }
-#buttonYesNo {
+.buttonYesNo {
   border: solid goldenrod;
   border-radius: 8mm;
   background-color: palegoldenrod;
