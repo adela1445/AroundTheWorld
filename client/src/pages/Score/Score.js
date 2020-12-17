@@ -66,4 +66,4 @@ function Score() {
 
 export default Score
 
-
+// hold on a sec type y if you see this or n if not =
